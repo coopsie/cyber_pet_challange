@@ -9,15 +9,12 @@ class Animal {
     }
     feed() {
        happinessLevel.value += 20;
-       petEmotion.textContent = `${pet.name} loves food!`;
     }
     wash() {
        happinessLevel.value -= 15;
-       petEmotion.textContent = `Uh-oh! ${pet.name} hates bath time.`;
     }
     stroke() {
        happinessLevel.value += 5;
-       petEmotion.textContent = `${pet.name} likes cuddles.`;
     }
  }
  
@@ -27,7 +24,6 @@ class Animal {
     }
     play() {
        happinessLevel.value += 15;
-       petEmotion.textContent = `Yes! ${pet.name} loves walkies!`;
     }
  }
  
@@ -37,7 +33,6 @@ class Animal {
     }
     play() {
        happinessLevel.value -= 10;
-       petEmotion.textContent = `No way. ${pet.name} likes alone time.`;
     }
  }
  
@@ -47,7 +42,6 @@ class Animal {
     }
     play() {
        happinessLevel.value += 15;
-       petEmotion.textContent = `${pet.name} likes to play.`;
     }
  }
 
@@ -76,7 +70,7 @@ petInterface.style.display = "none";
 
 // function that asks user for name of pet
 const getName = () => {
-   petName = prompt("Aw, great choice! Now enter a name for your pet.");
+   petName = prompt("Please enter a name for your pet.");
    while (petName.length === 0) {
       alert("Please enter a name for your pet.");
       petName = prompt("Your pet name:");
@@ -84,6 +78,8 @@ const getName = () => {
 };
 
 // decreasing the happiness level of progress bar
+//https://www.w3schools.com/howto/howto_js_progressbar.asp
+
 const decreaseHappiness = () => {
    const intervalId = setInterval(reduceBar, 1000);
    function reduceBar() {

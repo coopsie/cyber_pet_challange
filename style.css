@@ -21,7 +21,7 @@ h1 {
   font-family: "Courier New";
   letter-spacing: 0.2rem;
   text-align: center;
-  font-size: 3rem;
+  font-size: 60px;
   padding: 0.6em 0 0.2em 0;
 }
 
@@ -32,6 +32,7 @@ h1 {
 
 .intro-text {
   text-align: center;
+  font-size: 30px;
   padding-bottom: 0.5em;
 }
 
@@ -49,14 +50,14 @@ h1 {
   transition: transform 500ms;
 }
 
-.dog-img:hover,
+/* .dog-img:hover,
 .rabbit-img:hover {
   transform: rotate(20deg) scale(1.1);
 }
 
 .cat-img:hover {
   transform: rotate(20deg) scale(1.1);
-}
+} */
 
 .main-image {
   width: 75%;
@@ -116,7 +117,7 @@ progress[value]::-webkit-progress-value {
 }
 
 .action-button:hover {
-  border-radius: 50px;
+  /* border-radius: 50px; */
   cursor: pointer;
 }
 
