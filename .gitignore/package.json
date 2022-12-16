@@ -1,0 +1,20 @@
+{
+  "name": "cyber-pet-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cjsutcliffe/CN-Cyber-Pet-Challenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cjsutcliffe/CN-Cyber-Pet-Challenge/issues"
+  },
+  "homepage": "https://github.com/cjsutcliffe/CN-Cyber-Pet-Challenge#readme"
+}

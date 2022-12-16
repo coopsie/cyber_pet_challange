@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Courier New";
+  line-height: 1.5;
+  font-size: 1.125rem;
+  height: calc(100vh - 1em);
+}
+
+img {
+  width: 100%;
+  border-radius: 100%;
+  /* box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2); */
+}
+
+h1 {
+  font-family: "Courier New";
+  letter-spacing: 0.2rem;
+  text-align: center;
+  font-size: 3rem;
+  padding: 0.6em 0 0.2em 0;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.intro-text {
+  text-align: center;
+  padding-bottom: 0.5em;
+}
+
+.image-group {
+  padding: 2em 0;
+}
+
+.image {
+  width: 85%;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+.animal-img {
+  transition: transform 500ms;
+}
+
+.dog-img:hover,
+.rabbit-img:hover {
+  transform: rotate(20deg) scale(1.1);
+}
+
+.cat-img:hover {
+  transform: rotate(20deg) scale(1.1);
+}
+
+.main-image {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.pet-stats {
+  padding: 0.5em 0 1.5em 0;
+  text-align: center;
+}
+
+.pet-stats-style {
+  font-weight: bold;
+}
+
+progress[value] {
+  display: inline-block;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress[value]::-webkit-progress-value {
+  background: forestgreen;
+  border-radius: 5px;
+}
+
+.pet-emotion {
+  display: none;
+  font-style: italic;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 2em;
+}
+
+.action-button {
+  width: 40%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125rem;
+  border: none;
+  background-color: white;
+  color: black;
+  border: 3px solid black;
+  border-radius: 5px;
+  padding: 0.5em 0.75em;
+  margin: 0.5em;
+  transition: border-radius 500ms;
+}
+
+.action-button:hover {
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.start-again {
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
+  padding-bottom: 2em;
+}
+
+.start-again:hover {
+  font-weight: bold;
+}
+
+@media (min-width: 900px) {
+  .wrapper {
+    width: 80%;
+    max-width: 1250px;
+    margin-top: 1em;
+  }
+
+  .image-group {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .image {
+    width: 30%;
+    margin: 0 auto;
+    padding-bottom: 0;
+    cursor: pointer;
+  }
+
+  .main-image {
+    width: 25%;
+    margin: 0 4em;
+  }
+
+  .pet-info {
+    display: flex;
+    justify-content: center;
+  }
+
+  .pet-stats {
+    width: 40%;
+    font-size: 1.6rem;
+    text-align: left;
+    align-self: center;
+  }
+
+  progress[value] {
+    display: block;
+    margin: 0.2em 0;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2em 0;
+  }
+
+  .action-button {
+    width: 15%;
+  }
+}
